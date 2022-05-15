@@ -9,6 +9,14 @@
   ],
   "creatorBuild" : "34335",
   "files" : {
+    "\/deploy\/blog.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/blog.html",
+      "oF" : 0
+    },
     "\/deploy\/css\/styles.css" : {
       "aP" : 1,
       "bl" : 0,
@@ -20,6 +28,19 @@
       "oAP" : "\/deploy\/css\/styles-min.css",
       "oF" : 0,
       "pg" : 0
+    },
+    "\/deploy\/img\/blog\/blog-hero.png" : {
+      "ft" : 32768,
+      "iS" : 929822,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/blog\/blog-hero.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
     },
     "\/deploy\/img\/blog\/business-support.png" : {
       "ft" : 32768,
@@ -39,19 +60,6 @@
       "iS" : 153762,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/blog\/com-resources.png",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "oT" : 1,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/deploy\/img\/blog\/feature-photo-1-600x442 1.png" : {
-      "ft" : 32768,
-      "iS" : 929822,
-      "oA" : 0,
-      "oAP" : "\/deploy\/img\/blog\/feature-photo-1-600x442 1.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -203,11 +211,11 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/deploy\/img\/homepage\/HomepageHero.png" : {
+    "\/deploy\/img\/homepage\/homepage-hero.png" : {
       "ft" : 32768,
       "iS" : 1451210,
       "oA" : 0,
-      "oAP" : "\/deploy\/img\/homepage\/HomepageHero.png",
+      "oAP" : "\/deploy\/img\/homepage\/homepage-hero.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -229,11 +237,11 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/deploy\/img\/homepage\/PlantsHomepagePic.png" : {
+    "\/deploy\/img\/homepage\/plants.png" : {
       "ft" : 32768,
       "iS" : 75688,
       "oA" : 0,
-      "oAP" : "\/deploy\/img\/homepage\/PlantsHomepagePic.png",
+      "oAP" : "\/deploy\/img\/homepage\/plants.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -261,11 +269,75 @@
       "sC" : 3,
       "tS" : 0
     },
-    "\/dev\/global\/footer.kit" : {
+    "\/dev\/blog.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
       "oA" : 0,
+      "oAP" : "\/deploy\/blog.html",
+      "oF" : 2
+    },
+    "\/dev\/content\/blog\/blog-hero.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/blog\/blog-hero.html",
+      "oF" : 0
+    },
+    "\/dev\/content\/blog\/highlighted-articles.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/blog\/highlighted-articles.html",
+      "oF" : 0
+    },
+    "\/dev\/content\/blog\/posts.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/blog\/posts.html",
+      "oF" : 0
+    },
+    "\/dev\/content\/homepage\/cafe.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/homepage\/cafe.html",
+      "oF" : 0
+    },
+    "\/dev\/content\/homepage\/community.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/homepage\/community.html",
+      "oF" : 0
+    },
+    "\/dev\/content\/homepage\/homepage-hero.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/homepage\/homepage-hero.html",
+      "oF" : 0
+    },
+    "\/dev\/content\/homepage\/services.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/homepage\/services.html",
+      "oF" : 0
+    },
+    "\/dev\/global\/footer.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
       "oAP" : "\/dev\/global\/footer.html",
       "oF" : 0
     },
@@ -281,7 +353,7 @@
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/dev\/global\/header.html",
       "oF" : 0
     },

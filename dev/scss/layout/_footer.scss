@@ -4,5 +4,21 @@
 
 
 footer{
-    
+    #newsletter{
+        display: grid;
+        grid-template-columns: 38px auto 38px;
+        grid-template-areas:
+        ". section .";
+
+        >div{
+            grid-area: section;
+        }
+        form{
+            display: flex;
+        }
+    }
+
+    #icons{
+        display: flex;
+    }
 }

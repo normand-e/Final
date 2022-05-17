@@ -404,6 +404,21 @@ textarea {
 /* =============
     Footer
 ============= */
+footer #newsletter {
+  display: grid;
+  grid-template-columns: 38px auto 38px;
+  grid-template-areas: ". section .";
+}
+footer #newsletter > div {
+  grid-area: section;
+}
+footer #newsletter form {
+  display: flex;
+}
+footer #icons {
+  display: flex;
+}
+
 /* =============
     homepage hero
 ============= */

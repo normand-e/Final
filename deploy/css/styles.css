@@ -352,16 +352,31 @@ template {
 /* =============
     Base
 ============= */
+body p, body h1, body h2, body h3, body h4 {
+  margin: 0;
+  padding: 0;
+}
+body ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.base-grid {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". section .";
+}
+.base-grid > div {
+  grid-area: section;
+}
+
 /* =============
     Typography
 ============= */
 /* =============
     Buttons
 ============= */
-button {
-  border: none;
-}
-
 /* =============
     Forms
 ============= */
@@ -386,11 +401,6 @@ textarea {
 /* =============
     Header
 ============= */
-header {
-  color: red;
-  font-size: 0.75rem;
-}
-
 /* =============
     Footer
 ============= */

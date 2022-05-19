@@ -434,7 +434,7 @@ footer #icons {
 .service-grid ul #plants {
   grid-area: plants;
 }
-.service-grid ul #cafe {
+.service-grid ul #cafe-services {
   grid-area: cafe;
 }
 .service-grid ul #gifts {

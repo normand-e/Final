@@ -1,3 +1,54 @@
 /* =============
     Typography
 ============= */
+
+h1, h2, h3, h4, p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: var(--ruddy-bronze-light);
+   
+}
+
+
+.par1{
+    font-size: rem-calc(16);
+    line-height: 20px;
+}
+
+.par2{
+    font-size: rem-calc(18);
+    line-height: 22px; 
+}
+
+.par3{
+    font-size: rem-calc(24);
+    line-height: 29px; 
+}
+
+.par4{
+    font-size: rem-calc(32);
+    font-weight: 500;
+    line-height: 39px; 
+}
+
+.header1{
+    font-size: rem-calc(40);
+    font-weight: 500;
+    line-height: 49px; 
+}
+
+.header2{
+    font-size: rem-calc(48);
+    font-weight: 600;
+    line-height: 59px; 
+}
+
+.header2{
+    font-size: rem-calc(56);
+    font-weight: 700;
+    line-height: 68px; 
+}
+
+.section-title{
+    text-align: center;
+}

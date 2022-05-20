@@ -3,5 +3,42 @@
 ============= */
 
 #homepage-hero{
+    text-align: center;
+
+    #home-hero-img{
+        width: 100vw;
+        height: 40vw;
+        background-image: url('../img/homepage/homepage-hero.png');
+        background-size: cover;
+        background-position: 10% 100%;
+        
+    }
+
+    #hero-copy{
+        position: absolute;
+        top: 100px;
+        width: 100vw;
+        
+        filter: drop-shadow( -10, -3, #421908);
+        h1{
+            font-family: 'BenchNine', sans-serif;
+            font-size: rem-calc(32);
+            color: var(--white);
+            letter-spacing: 1rem;
+            
+        }
+        h2{
+            
+            font-family: 'Playfair Display', serif;
+            font-size: rem-calc(12.5);
+            color: var(--white);
+            letter-spacing: .5rem;
+            margin-top: 20px;
+            
+        }
+       
+    }
+
+
 
 }

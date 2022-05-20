@@ -567,6 +567,15 @@ footer #newsletter h3 {
 }
 footer #brand-icons {
   display: flex;
+  justify-content: center;
+}
+footer #brand-icons li {
+  margin: 10px;
+  color: var(--ruddy-bronze-light);
+}
+footer #copywrite {
+  text-align: center;
+  margin-bottom: 40px;
 }
 footer #newsletter-btn {
   margin-left: 16px;

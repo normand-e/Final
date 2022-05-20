@@ -4,6 +4,7 @@
 
 
 body{
+    background-color: var(--seashell-dark);
     p, h1, h2, h3, h4{
         margin: 0;
         padding: 0;
@@ -31,4 +32,52 @@ body{
 
 .base-space{
     margin-top: 30px;
+}
+
+.base-input{
+    background-color: var(--seashell-dark);
+    border-radius: 0 0 8px 8px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    padding-left: 16px;
+    color: var(--champagne-pink-dark);
+    border: 1.5px solid var(--champagne-pink-dark);
+    font-size: rem-calc(16);
+}
+
+
+.icon-input{
+    background-color: var(--seashell-dark);
+    border-radius: 0 0 8px 8px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    padding-left: 16px;
+    color: var(--champagne-pink-dark);
+    border: 1.5px solid var(--champagne-pink-dark);
+    display: flex;
+    font-size: rem-calc(16);
+    .i{
+        position: absolute;
+    }
+    .icon {
+        padding: 10px 0;
+        margin: 0;
+        color: var(--champagne-pink-dark);
+        min-width: 20px;
+        text-align: center;
+    }
+    input{
+        background-color: transparent;
+        border: none;
+        text-align: left;
+        padding-left: 10px;
+    }
+    a:link, a:visited{
+        color: var(--champagne-pink-dark);
+
+
+        &:hover, &:active{
+            color: var(--champagne-pink-dark);
+        }
+    }
 }

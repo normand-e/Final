@@ -52,3 +52,22 @@ h1, h2, h3, h4, p{
 .section-title{
     text-align: center;
 }
+
+.bolded{
+    font-weight: 600;
+}
+
+.standard-links{
+    color: var(--indigo-dark);
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+
+    a:link, a:visited{
+        
+
+
+        &:hover, &:active{
+
+        }
+    }
+}

@@ -1,3 +1,23 @@
 /* =============
     Buttons
 ============= */
+
+.base-btn{
+    background-color: var(--tea-green-dark);
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: rem-calc(16);
+    font-weight: 600;
+    padding: 8px 20px;
+    color: var(--seashell-dark);
+    border-radius: 0 0 8px 8px;
+
+    a:link, a:visited{
+        background-color: var(--indigo-dark);
+
+
+        &:hover, &:active{
+            background-color: var(--indigo-dark);
+        }
+    }
+}

@@ -624,39 +624,6 @@ footer #newsletter-btn {
   margin-top: 20px;
 }
 
-#services #floral-img {
-  width: 100%;
-  height: 30vw;
-  background-image: url("../img/homepage/floral.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: 0% 100%;
-}
-#services #plants-img {
-  width: 100%;
-  height: 30vw;
-  background-image: url("../img/homepage/plants.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: 0% 100%;
-}
-#services #cafe-img {
-  width: 100%;
-  height: 30vw;
-  background-image: url("../img/homepage/coffee-cup.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: 0% 100%;
-}
-#services #gifts-img {
-  width: 100%;
-  height: 30vw;
-  background-image: url("../img/homepage/candles.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: 0% 100%;
-}
-
 .service-grid ul {
   display: grid;
   gap: 16px;
@@ -680,13 +647,19 @@ footer #newsletter-btn {
     grid-template-columns: 120px auto auto 120px;
   }
 }
+@media (min-width: 1280px) {
+  .service-grid ul {
+    grid-template-columns: auto 195px 195px 195px 195px auto;
+    grid-template-areas: ". floral plants cafe gifts .";
+  }
+}
 .service-grid .service-card h4 {
   padding-top: 8px;
 }
 .service-grid .service-card img {
   padding-top: 6px;
-  max-width: 100%;
-  max-height: auto;
+  min-width: 188px;
+  min-height: 188px;
 }
 .service-grid .service-card p {
   padding-top: 6px;
@@ -709,7 +682,28 @@ footer #newsletter-btn {
   background-repeat: no-repeat;
   background-position: 0% 70%;
 }
+@media (min-width: 834px) {
+  #cafe .text-grid {
+    display: grid;
+    grid-template-columns: 33% 33% auto;
+    gap: 16px;
+  }
+}
 
 /* =============
     community
 ============= */
+#community #community-hero {
+  width: 100%;
+  height: 30vh;
+  background-image: url("../img/homepage/community.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 0% 70%;
+}
+@media (min-width: 834px) {
+  #community #community-hero {
+    width: 100%;
+    height: 35vh;
+  }
+}

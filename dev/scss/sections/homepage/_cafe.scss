@@ -10,6 +10,17 @@
         background-size: contain;
         background-repeat: no-repeat;
         background-position: 0% 70%;
+    
+    }
+
+    .text-grid{
+        @include md{
+            display: grid;
+            grid-template-columns: 33% 33% auto;
+            gap: 16px;
+        }
+        
+        
     }
     // aside{
     //     img{

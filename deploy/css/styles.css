@@ -384,6 +384,16 @@ body ul {
 .base-grid > div {
   grid-area: section;
 }
+@media (min-width: 834px) {
+  .base-grid {
+    grid-template-columns: auto 598px auto;
+  }
+}
+@media (min-width: 1280px) {
+  .base-grid {
+    grid-template-columns: auto 800px auto;
+  }
+}
 
 .base-space {
   margin-top: 30px;
@@ -614,16 +624,69 @@ footer #newsletter-btn {
   margin-top: 20px;
 }
 
+#services #floral-img {
+  width: 100%;
+  height: 30vw;
+  background-image: url("../img/homepage/floral.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 0% 100%;
+}
+#services #plants-img {
+  width: 100%;
+  height: 30vw;
+  background-image: url("../img/homepage/plants.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 0% 100%;
+}
+#services #cafe-img {
+  width: 100%;
+  height: 30vw;
+  background-image: url("../img/homepage/coffee-cup.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 0% 100%;
+}
+#services #gifts-img {
+  width: 100%;
+  height: 30vw;
+  background-image: url("../img/homepage/candles.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 0% 100%;
+}
+
 .service-grid ul {
   display: grid;
   gap: 16px;
-  grid-template-columns: 50% auto;
+  grid-template-columns: 16px 50% auto 16px;
+  grid-template-areas: ". floral plants ." ". cafe gifts .";
+}
+.service-grid ul #floral {
+  grid-area: floral;
+}
+.service-grid ul #plants {
+  grid-area: plants;
+}
+.service-grid ul #cafe-services {
+  grid-area: cafe;
+}
+.service-grid ul #gifts {
+  grid-area: gifts;
+}
+@media (min-width: 834px) {
+  .service-grid ul {
+    grid-template-columns: 120px auto auto 120px;
+  }
 }
 .service-grid .service-card h4 {
   padding-top: 8px;
 }
 .service-grid .service-card img {
   padding-top: 6px;
+  max-width: 100%;
+  max-height: auto;
 }
 .service-grid .service-card p {
   padding-top: 6px;
@@ -638,6 +701,15 @@ footer #newsletter-btn {
 /* =============
     cafe
 ============= */
+#cafe #cafe-hero {
+  width: 100%;
+  height: 40vh;
+  background-image: url("../img/homepage/cafe-preview.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 0% 70%;
+}
+
 /* =============
     community
 ============= */

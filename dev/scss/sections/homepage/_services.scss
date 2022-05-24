@@ -1,16 +1,77 @@
 #services{
 
+    #floral-img{
+        width: 100%;
+        height: 30vw;
+        background-image: url('../img/homepage/floral.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: 0% 100%;
+        // @include md{
+        //     width: 35vw;
+        //     height:35vw;
+        // }
+        
+    }
+    #plants-img{
+        width: 100%;
+        height:30vw;
+        background-image: url('../img/homepage/plants.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: 0% 100%;
+        
+    }
+    #cafe-img{
+        width: 100%;
+        height:30vw;
+        background-image: url('../img/homepage/coffee-cup.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: 0% 100%;
+    }
+    #gifts-img{
+        width: 100%;
+        height:30vw;
+        background-image: url('../img/homepage/candles.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: 0% 100%;
+    }
 
-
+    
 }
 
 
 
 .service-grid{
     ul{
+
+
         display: grid;
         gap: 16px;
-        grid-template-columns: 50% auto;
+        grid-template-columns: 16px 50% auto 16px;
+        grid-template-areas: 
+        ". floral plants ."
+        ". cafe gifts .";
+        #floral{
+            grid-area: floral
+        }
+        #plants{
+            grid-area: plants
+        }
+        #cafe-services{
+            grid-area: cafe
+        }
+        #gifts{
+            grid-area: gifts
+        }
+
+        @include md{
+            grid-template-columns: 120px auto auto 120px;
+         
+            
+        }
     }
     
 .service-card{
@@ -19,6 +80,8 @@
     }
     img{
         padding-top: 6px;
+        max-width: 100%;
+        max-height: auto;
         // width: 100%;
     }
     p{

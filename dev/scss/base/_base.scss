@@ -28,6 +28,14 @@ body{
         grid-area: section;
     }
 
+    @include md{
+        grid-template-columns: auto 598px auto;
+    }
+
+    @include lg{
+        grid-template-columns: auto 800px auto;
+    }
+
 }
 
 .base-space{

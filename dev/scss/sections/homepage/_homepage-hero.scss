@@ -18,6 +18,15 @@
         position: absolute;
         top: 100px;
         width: 100vw;
+        @include md{
+            top: 150px
+        }
+        @include lg{
+            top: 175px
+        }
+        @include xl{
+            top: 200px
+        }
         
         filter: drop-shadow( -10, -3, #421908);
         h1{
@@ -25,6 +34,15 @@
             font-size: rem-calc(32);
             color: var(--white);
             letter-spacing: 1rem;
+            @include md{
+                font-size: rem-calc(63);
+            }
+            @include lg{
+                font-size: rem-calc(95);
+            }
+            @include xl{
+                font-size: rem-calc(107);
+            }
             
         }
         h2{
@@ -34,6 +52,17 @@
             color: var(--white);
             letter-spacing: .5rem;
             margin-top: 20px;
+            @include md{
+                font-size: rem-calc(24);
+                margin-top: 35px;
+            }
+            @include lg{
+                margin-top: 50px;
+                font-size: rem-calc(37);
+            }
+            @include lg{
+                font-size: rem-calc(42);
+            }
             
         }
        

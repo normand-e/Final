@@ -102,3 +102,20 @@ body{
         display: block;
     }
 }
+
+.hide-till-lg{
+    display: none;
+    @include lg{
+        display: inline-block;
+    }
+}
+.hide-at-md{
+    display: inline-block;
+    @include lg{
+        display: none;
+    }
+}
+
+.show-menu{
+    display: block !important;
+}

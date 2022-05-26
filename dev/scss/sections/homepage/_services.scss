@@ -1,72 +1,91 @@
 #services{
 
-    // #floral-img{
-    //     width: 100%;
-    //     height: 30vw;
-    //     background-image: url('../img/homepage/floral.png');
-    //     background-size: contain;
-    //     background-repeat: no-repeat;
-    //     background-position: 0% 100%;
-    //     @include md{
-    //         width: 35vw;
-    //         height:35vw;
-    //     }
-    //     @include lg{
-    //         width: 15vw;
-    //         height:14vw;
-    //     }
+    #floral-img{
+        width: 100%;
+        height: 35vw;
+        background-image: url('../img/homepage/floral.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 0% 100%;
+        @include md{
+            width: 100%;
+           height: 25vw;
+ 
+        }
+        @include lg{
+            width: 13vw;
+            height:13vw;
+        }
+        @include xl{
+            width: 220px;
+            height: 220px;
+        }
         
         
-    // }
-    // #plants-img{
-    //     width: 100%;
-    //     height:30vw;
-    //     background-image: url('../img/homepage/plants.png');
-    //     background-size: contain;
-    //     background-repeat: no-repeat;
-    //     background-position: 0% 100%;
-    //     @include md{
-    //         width: 35vw;
-    //         height:35vw;
-    //     }
-    //     @include lg{
-    //         width: 15vw;
-    //         height:14vw;
-    //     }
+    }
+    #plants-img{
+        width: 100%;
+        height:35vw;
+        background-image: url('../img/homepage/plants.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 0% 100%;
+        @include md{
+            width: 100%;
+            height: 25vw;
         
-    // }
-    // #cafe-img{
-    //     width: 100%;
-    //     height:30vw;
-    //     background-image: url('../img/homepage/coffee-cup.png');
-    //     background-size: contain;
-    //     background-repeat: no-repeat;
-    //     background-position: 0% 100%;
-    //     @include md{
-    //         width: 35vw;
-    //         height:35vw;
-    //     }
-    //     @include lg{
-    //         width: 100%;
-    //         height:14vw;
-    //     }
-    // }
-    // #gifts-img{
-    //     width: 100%;
-    //     height: 30vw;
-    //     background-image: url('../img/homepage/candles.png');
-    //     background-size: contain;
-    //     background-repeat: no-repeat;
-    //     background-position: 0% 100%;
-    //     @include md{
-    //         width: 35vw;
-    //         height:35vw;
-    //     }
-    //     @include lg{
-    //         width: 15vw;
-    //         height:14vw;
-    //     }
-    // }
+        }
+        @include lg{
+            width: 13vw;
+            height:13vw;
+        }
+        @include xl{
+            width: 220px;
+            height: 220px;
+        }
+        
+    }
+    #cafe-img{
+        width: 100%;
+        height:35vw;
+        background-image: url('../img/homepage/coffee-cup.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 0% 100%;
+        @include md{
+            width: 100%;
+            height: 25vw;
+        }
+        @include lg{
+            width: 13vw;
+            height:13vw;
+        }
+        @include xl{
+            width: 220px;
+            height: 220px;
+        }
+    }
+    #gifts-img{
+        width: 100%;
+        height: 35vw;
+        background-image: url('../img/homepage/candles.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 0% 100%;
+        @include md{
+            width: 100%;
+            height: 25vw;
+            background-position: 0% 50%;
+        }
+        @include lg{
+            width: 13vw;
+            height:13vw;
+        }
+        @include xl{
+            width: 220px;
+            height: 220px;
+        }
+    }
 
     
 }
@@ -78,11 +97,11 @@
 
 
         display: grid;
-        gap: 16px;
-        grid-template-columns: 16px 50% auto 16px;
+        // gap: 16px;
+        grid-template-columns:  16px 47% 16px auto 16px;
         grid-template-areas: 
-        ". floral plants ."
-        ". cafe gifts .";
+        ". floral . plants ."
+        ". cafe . gifts. ";
         #floral{
             grid-area: floral
         }
@@ -97,12 +116,19 @@
         }
 
         @include md{
-            grid-template-columns: 120px auto auto 120px;
+            gap: 16px;
+            grid-template-columns: auto 299px 299px auto;
+            grid-template-areas: 
+            ". floral plants ."
+            ". cafe gifts .";
          
         }
         @include lg{
             grid-template-columns: auto 195px 195px 195px 195px auto;
             grid-template-areas: ". floral plants cafe gifts .";
+        }
+        @include xl{
+            grid-template-columns: auto 220px 220px 220px 220px auto;
         }
     }
     
@@ -111,9 +137,9 @@
         padding-top: 8px;
     }
     img{
-        padding-top: 6px;
-        min-width: 188px;
-        min-height: 188px;
+        // padding-top: 6px;
+        // min-width: 188px;
+        // min-height: 188px;
        
        
         
@@ -132,4 +158,28 @@
     background-color: var(--champagne-pink-light);
     padding-top: 8px;
     padding-bottom: 16px;
+}
+
+#carousel{
+    div{
+        display: grid;
+        gap: 16px;
+        grid-template-columns: auto  578px 20px auto;
+        grid-template-areas: ".  full-img part-img ." ;
+        #full-img{
+            width: 100%;
+            grid-area: full-img;
+        }
+        #part-img{
+            width: 100%;
+            height: 100%;
+            grid-area: part-img;
+        }
+    }
+    
+    #caro-icons{
+        display: flex;
+        justify-content: center;
+        margin-top: 16px;
+    }
 }

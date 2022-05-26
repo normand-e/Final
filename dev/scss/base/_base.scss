@@ -96,4 +96,9 @@ body{
     }
 }
 
-
+.hide-till-md{
+    display: none;
+    @include md{
+        display: block;
+    }
+}

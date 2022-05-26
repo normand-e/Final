@@ -5,16 +5,20 @@
 #community{
     #community-hero{
         width: 100%;
-        height: 30vh;
+        height: 20vh;
         
         background-image: url('../img/homepage/community.png');
-        background-size: contain;
+        background-size: cover;
         background-repeat: no-repeat;
-        background-position: 0% 70%;
+        background-position: 45% 35%;
         @include md{
-            width: 100%;
+            background-position: 45% 100%;
+            height: 30vh;
+        }
+        @include lg{
             height: 35vh;
         }
         
     }
+
 }

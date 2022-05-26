@@ -51,5 +51,17 @@ footer{
         margin-left: 16px;
     }
 
+    @include md{
+        display: grid;
+        grid-template-columns: auto 598px auto;
+        grid-template-areas: ". content .";
+        div{
+            grid-area: content;
+        }
+    }
+        
 
+    @include lg{
+        grid-template-columns: auto 800px auto;
+    }
 }

@@ -444,6 +444,15 @@ body ul {
   color: var(--champagne-pink-dark);
 }
 
+.hide-till-md {
+  display: none;
+}
+@media (min-width: 834px) {
+  .hide-till-md {
+    display: block;
+  }
+}
+
 /* =============
     Typography
 ============= */
@@ -590,6 +599,21 @@ footer #copywrite {
 footer #newsletter-btn {
   margin-left: 16px;
 }
+@media (min-width: 834px) {
+  footer {
+    display: grid;
+    grid-template-columns: auto 598px auto;
+    grid-template-areas: ". content .";
+  }
+  footer div {
+    grid-area: content;
+  }
+}
+@media (min-width: 1280px) {
+  footer {
+    grid-template-columns: auto 800px auto;
+  }
+}
 
 /* =============
     homepage hero
@@ -624,11 +648,116 @@ footer #newsletter-btn {
   margin-top: 20px;
 }
 
+#services #floral-img {
+  width: 100%;
+  height: 35vw;
+  background-image: url("../img/homepage/floral.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0% 100%;
+}
+@media (min-width: 834px) {
+  #services #floral-img {
+    width: 100%;
+    height: 25vw;
+  }
+}
+@media (min-width: 1280px) {
+  #services #floral-img {
+    width: 13vw;
+    height: 13vw;
+  }
+}
+@media (min-width: 1440px) {
+  #services #floral-img {
+    width: 220px;
+    height: 220px;
+  }
+}
+#services #plants-img {
+  width: 100%;
+  height: 35vw;
+  background-image: url("../img/homepage/plants.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0% 100%;
+}
+@media (min-width: 834px) {
+  #services #plants-img {
+    width: 100%;
+    height: 25vw;
+  }
+}
+@media (min-width: 1280px) {
+  #services #plants-img {
+    width: 13vw;
+    height: 13vw;
+  }
+}
+@media (min-width: 1440px) {
+  #services #plants-img {
+    width: 220px;
+    height: 220px;
+  }
+}
+#services #cafe-img {
+  width: 100%;
+  height: 35vw;
+  background-image: url("../img/homepage/coffee-cup.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0% 100%;
+}
+@media (min-width: 834px) {
+  #services #cafe-img {
+    width: 100%;
+    height: 25vw;
+  }
+}
+@media (min-width: 1280px) {
+  #services #cafe-img {
+    width: 13vw;
+    height: 13vw;
+  }
+}
+@media (min-width: 1440px) {
+  #services #cafe-img {
+    width: 220px;
+    height: 220px;
+  }
+}
+#services #gifts-img {
+  width: 100%;
+  height: 35vw;
+  background-image: url("../img/homepage/candles.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0% 100%;
+}
+@media (min-width: 834px) {
+  #services #gifts-img {
+    width: 100%;
+    height: 25vw;
+    background-position: 0% 50%;
+  }
+}
+@media (min-width: 1280px) {
+  #services #gifts-img {
+    width: 13vw;
+    height: 13vw;
+  }
+}
+@media (min-width: 1440px) {
+  #services #gifts-img {
+    width: 220px;
+    height: 220px;
+  }
+}
+
 .service-grid ul {
   display: grid;
-  gap: 16px;
-  grid-template-columns: 16px 50% auto 16px;
-  grid-template-areas: ". floral plants ." ". cafe gifts .";
+  grid-template-columns: 16px 47% 16px auto 16px;
+  grid-template-areas: ". floral . plants ." ". cafe . gifts. ";
 }
 .service-grid ul #floral {
   grid-area: floral;
@@ -644,7 +773,9 @@ footer #newsletter-btn {
 }
 @media (min-width: 834px) {
   .service-grid ul {
-    grid-template-columns: 120px auto auto 120px;
+    gap: 16px;
+    grid-template-columns: auto 299px 299px auto;
+    grid-template-areas: ". floral plants ." ". cafe gifts .";
   }
 }
 @media (min-width: 1280px) {
@@ -653,13 +784,13 @@ footer #newsletter-btn {
     grid-template-areas: ". floral plants cafe gifts .";
   }
 }
+@media (min-width: 1440px) {
+  .service-grid ul {
+    grid-template-columns: auto 220px 220px 220px 220px auto;
+  }
+}
 .service-grid .service-card h4 {
   padding-top: 8px;
-}
-.service-grid .service-card img {
-  padding-top: 6px;
-  min-width: 188px;
-  min-height: 188px;
 }
 .service-grid .service-card p {
   padding-top: 6px;
@@ -671,16 +802,48 @@ footer #newsletter-btn {
   padding-bottom: 16px;
 }
 
+#carousel div {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: auto 578px 20px auto;
+  grid-template-areas: ".  full-img part-img .";
+}
+#carousel div #full-img {
+  width: 100%;
+  grid-area: full-img;
+}
+#carousel div #part-img {
+  width: 100%;
+  height: 100%;
+  grid-area: part-img;
+}
+#carousel #caro-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+
 /* =============
     cafe
 ============= */
 #cafe #cafe-hero {
   width: 100%;
-  height: 40vh;
+  height: 20vh;
   background-image: url("../img/homepage/cafe-preview.png");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: 0% 70%;
+}
+@media (min-width: 834px) {
+  #cafe #cafe-hero {
+    background-position: 80% 100%;
+    height: 30vh;
+  }
+}
+@media (min-width: 1280px) {
+  #cafe #cafe-hero {
+    height: 35vh;
+  }
 }
 @media (min-width: 834px) {
   #cafe .text-grid {
@@ -695,15 +858,20 @@ footer #newsletter-btn {
 ============= */
 #community #community-hero {
   width: 100%;
-  height: 30vh;
+  height: 20vh;
   background-image: url("../img/homepage/community.png");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
-  background-position: 0% 70%;
+  background-position: 45% 35%;
 }
 @media (min-width: 834px) {
   #community #community-hero {
-    width: 100%;
+    background-position: 45% 100%;
+    height: 30vh;
+  }
+}
+@media (min-width: 1280px) {
+  #community #community-hero {
     height: 35vh;
   }
 }

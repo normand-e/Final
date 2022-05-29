@@ -115,7 +115,13 @@ body{
         display: none;
     }
 }
+.hide-at-lg{
+    @include lg{
+        display: none;
+    }
+}
 
 .show-menu{
     display: block !important;
 }
+

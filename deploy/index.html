@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/styles.css?ckcachebust=D6CB9D2F96EA175DDF3D4A86827F7202">
-    <script src="https://kit.fontawesome.com/b4191eaaa2.js?ckcachebust=675272676" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/styles.css?ckcachebust=4816C9A8B9F38F832BCF0FBA6DC000A3">
+    <script src="https://kit.fontawesome.com/b4191eaaa2.js?ckcachebust=675525808" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com?ckcachebust=09FE4895A5DD8EC7007061B2D7D989F8" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com?ckcachebust=6A694F77161DA37B511212EC899479B4" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=BenchNine:wght@700&family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@600&display=swap"
         rel="stylesheet">
@@ -22,26 +22,58 @@
 
     <header>
         <div>
-            <aside id="burger-container">
-                <button id="burger-btn"><i class="fa-solid fa-plus hide-at-md"></i><i class="fa-solid fa-x hide-till-lg"></i></button>
-                
-                
+            <aside id="burger-container" >
+                 <!-- class="hide-at-lg" -->
+                <button id="burger-btn">
+                    <i class="fa-solid fa-plus hide-at-lg"></i>
+                </button>
+    
             </aside>
-            
+    
+             <nav id="main-menu">
+                 <aside class="hide-at-lg">
+                     <button id="close-btn">
+                         <i class="fa-solid fa-xmark"></i>
+                     </button>
+                 </aside>
+             
+                 <section>
+                     <ul>
+                      
+                         <li><a href="#cafe">CAFÉ</a></li>
+                      
+                         <li><a href="#services">SHOP</a></li>
+             
+                         <li><a href="#homepage-hero">ABOUT</a></li>
+             
+                         <li><a href="#newsletter">CONTACT</a></li>
+             
+                         <li><a href="../deploy/blog.html">BLOG</a></li>
+             
+                         <li><a href="#homepage-hero">LOGIN</a></li>
+                     </ul>
+                 </section>
+                 
+             </nav>
+    
             <section id="logo-container">
-                <img src="img/global/logo.png" alt="rabbit logo">
-                <section id="icons-head">
-               
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                        <i class="fa-solid fa-cart-shopping"></i>
-         
-                </section>
-                
-                
+                <a href="#homepage-hero"><img src="img/global/logo.png" alt="rabbit logo"></a>
+    
             </section>
+            <section id="icons-head">
+    
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                <button><i class="fa-solid fa-cart-shopping"></i></button>
+    
+            </section>
+    
+           
+    
+    
+    
         </div>
-        
-        
+    
+    
     </header>
 
     <section id="homepage-hero" >
@@ -186,7 +218,7 @@
                                 
                         </section>
                         
-                        <p class="base-space">Learn more about <span class="bolded">how we’re doing this.</span></p>
+                        <p class="base-space">Learn more about <a class="bolded" href="#newsletter">how we’re doing this.</a></p>
                     </div>
                     
                 

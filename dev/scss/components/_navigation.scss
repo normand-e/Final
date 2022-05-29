@@ -6,17 +6,25 @@ a:link,
 a:visited {
     text-decoration: none;
     transition: 0.25s;
+    font-size: rem-calc(16);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: var(--ruddy-bronze-light);
+
 }
 
 ul {
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding-bottom: 16px;
+    li{
+        margin-bottom: 16px;
+        margin-left: 16px;
+    }
 }
 
 nav{
-    // display: none;
-
+    display: none;
     height: 100vh;
     padding: 16px;
     position: fixed;
@@ -24,13 +32,32 @@ nav{
     top: 0;
     width: 70vw;
     box-sizing: border-box;
+    background-color: var(--tea-green);
 
     @include lg {
-        display: block;
-
+      display: block;
         height: 50%;
         padding: 0;
         position: relative;
         width: 100%;
+        background-color: transparent;
+
+        section{
+            ul{
+                display: flex;
+                li{
+                    margin-left: 16px;
+                }
+            }
+        }
+   
     }
+
+    #close-btn{
+        padding: 16px 0;
+    }
+    
+
+        
+    
 }

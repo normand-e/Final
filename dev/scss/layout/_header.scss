@@ -3,59 +3,65 @@
 ============= */
 
 
-header{
+header {
 
-    div{
+    padding: 16px 0;
+    
+    >div {
         display: grid;
-    grid-template-columns: 47% auto;
+        grid-template-columns: 20% 60% auto;
+        align-items: center;
     }
 
 
     background-color: var(--seashell-dark);
-    border-radius: 0 0 16px 16px;
+
     position: fixed;
     left: 0;
     top: 0;
     width: 100%;
-    #logo-container{
+
+    #logo-container {
         display: flex;
-        align-items: center;
-        #icons-head{
-            margin-left: auto;
-            margin-right: 16px;
-         
-        }
-        
-      
-        // justify-self: flex-end;
-    }
-    
-    
+        justify-content: center;
     }
 
-    #burger-container{
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        align-content: center;
+    #icons-head {
+        margin-left: auto;
+        margin-right: 16px;
+   
 
-        div{
-      
+    }
 
-        @include lg{
+
+    // justify-self: flex-end;
+
+
+
+}
+
+#burger-container {
+    display: flex;
+    justify-content: flex-start;
+  
+
+
+
+
+        @include lg {
             display: none;
-            
+
         }
 
-        
-    }
 
-    #burger-btn{
+
+
+    #burger-btn {
         background: none;
         border: none;
-        
+
         padding: 16px;
 
-        
+
     }
 }

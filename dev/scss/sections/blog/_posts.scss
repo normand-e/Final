@@ -1,0 +1,56 @@
+#posts{
+    #category-search{
+        display: grid;
+        gap: 16px;
+    
+        grid-template-areas: 
+        "posts cat cat cat"
+        "s-in s-in s-in but";
+
+        h2{
+            grid-area: posts;
+        }
+        #cat{
+            grid-area: cat;
+        }
+        #search-blog{
+            grid-area: s-in;
+        }
+        #blog-search-btn{
+            grid-area: but;
+        }
+
+        @include md{
+            grid-template-areas: 
+            ". posts . . cat cat cat ."
+            ". s-in s-in s-in s-in s-in but .";
+        }
+
+        @include lg{
+            grid-template-areas: 
+            ". . posts . . . . . . . . ."
+            ". . cat cat cat s-in s-in s-in s-in but . .";
+        }
+    }
+
+    #pagination{
+        display: flex;
+        justify-content: center;
+        ul{
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    #cards-ind{
+        margin: 0;
+        display: grid;
+        grid-template-columns: 70px auto 70px;
+        grid-template-areas: ". content .";
+        >div{
+            grid-area: content;
+        }
+        
+    }
+  
+}

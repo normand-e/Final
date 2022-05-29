@@ -1048,3 +1048,48 @@ footer #newsletter-btn {
 #community a {
   color: var(--ruddy-bronze-dark);
 }
+
+#posts #category-search {
+  display: grid;
+  gap: 16px;
+  grid-template-areas: "posts cat cat cat" "s-in s-in s-in but";
+}
+#posts #category-search h2 {
+  grid-area: posts;
+}
+#posts #category-search #cat {
+  grid-area: cat;
+}
+#posts #category-search #search-blog {
+  grid-area: s-in;
+}
+#posts #category-search #blog-search-btn {
+  grid-area: but;
+}
+@media (min-width: 768px) {
+  #posts #category-search {
+    grid-template-areas: ". posts . . cat cat cat ." ". s-in s-in s-in s-in s-in but .";
+  }
+}
+@media (min-width: 1024px) {
+  #posts #category-search {
+    grid-template-areas: ". . posts . . . . . . . . ." ". . cat cat cat s-in s-in s-in s-in but . .";
+  }
+}
+#posts #pagination {
+  display: flex;
+  justify-content: center;
+}
+#posts #pagination ul {
+  display: flex;
+  align-items: center;
+}
+#posts #cards-ind {
+  margin: 0;
+  display: grid;
+  grid-template-columns: 70px auto 70px;
+  grid-template-areas: ". content .";
+}
+#posts #cards-ind > div {
+  grid-area: content;
+}

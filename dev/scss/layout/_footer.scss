@@ -28,7 +28,7 @@ footer{
         }
 
         background-color: var(--tea-green);
-        border-radius: 0 0 16px 16px;
+        
     }
 
     #brand-icons{
@@ -44,7 +44,24 @@ footer{
 
     #copywrite{
         text-align: center;
-        margin-bottom: 40px;
+        margin-bottom: 25px;
+        display: grid;
+        grid-template-areas: 
+        ". icons ."
+        ". copywrite .";
+        #brand-icons{
+            grid-area: icons;
+        }
+        #copywrite{
+            grid-area: copywrite;
+        }
+        @include md{
+            display: flex;
+            p{
+                margin-left: auto;
+            }
+        }
+        
     }
 
     #newsletter-btn{

@@ -53,6 +53,15 @@ body{
     font-size: rem-calc(16);
 }
 
+.base-border{
+    border-radius: 0 0 8px 8px;
+    @include md{
+        border-radius: 0 0 16px 16px;
+    }
+    @include lg{
+        border-radius: 0 0 24px 24px;
+    }
+}
 
 //ICON INPUT HTML SAMPLE
 // <div class="base-input">

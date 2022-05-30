@@ -3,5 +3,18 @@
 ============= */
 
 #blog-hero{
+    margin-top: 80px;
+    background-color: var(--champagne-pink-med);
+    padding: 16px 0;
 
+    h1{
+        margin-bottom: 8px;
+        @include md{
+            margin-bottom: 16px;
+        }
+    }
+    @include md{
+        text-align: center;
+
+    }
 }

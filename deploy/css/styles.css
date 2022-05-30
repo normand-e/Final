@@ -752,23 +752,23 @@ footer #newsletter-btn {
 }
 #homepage-hero #hero-copy {
   position: absolute;
-  top: 100px;
+  top: 140px;
   width: 100vw;
   filter: drop-shadow(-10, -3, #421908);
 }
 @media (min-width: 768px) {
   #homepage-hero #hero-copy {
-    top: 150px;
+    top: 190px;
   }
 }
 @media (min-width: 1024px) {
   #homepage-hero #hero-copy {
-    top: 175px;
+    top: 200px;
   }
 }
 @media (min-width: 1200px) {
   #homepage-hero #hero-copy {
-    top: 200px;
+    top: 230px;
   }
 }
 #homepage-hero #hero-copy h1 {
@@ -817,6 +817,9 @@ footer #newsletter-btn {
   }
 }
 
+/* =============
+    services
+============= */
 #services #floral-img {
   width: 100%;
   height: 35vw;
@@ -1049,6 +1052,12 @@ footer #newsletter-btn {
   color: var(--ruddy-bronze-dark);
 }
 
+/* =============
+    Blog Hero
+============= */
+/* =============
+    Posts - Blog
+============= */
 #posts #category-search {
   display: grid;
   gap: 16px;
@@ -1093,3 +1102,7 @@ footer #newsletter-btn {
 #posts #cards-ind > div {
   grid-area: content;
 }
+
+/* =============
+    Highlighted articles- blog
+============= */

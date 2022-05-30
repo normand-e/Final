@@ -18,12 +18,16 @@
 @import "layout/_header";
 @import "layout/_footer";
 
-// Sections Styles
+// Sections/Homepage(index) Styles
 @import "sections/homepage/_homepage-hero";
 @import "sections/homepage/_services";
 @import "sections/homepage/_cafe";
 @import "sections/homepage/_community";
 
+//Sections/Blog Styles
+@import "sections/blog/_blog-hero.scss";
 @import "sections/blog/_posts.scss";
+@import "sections/blog/_highlighted-articles.scss";
+
 
 

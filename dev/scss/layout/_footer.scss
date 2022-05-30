@@ -45,7 +45,6 @@ footer{
     #copywrite{
         text-align: center;
         margin-bottom: 25px;
-        display: grid;
         grid-template-areas: 
         ". icons ."
         ". copywrite .";
@@ -54,11 +53,13 @@ footer{
         }
         #copywrite{
             grid-area: copywrite;
+         
         }
         @include md{
             display: flex;
             p{
                 margin-left: auto;
+                margin-top: 10px;
             }
         }
         

@@ -94,6 +94,8 @@ body{
         border: none;
         text-align: left;
         padding-left: 10px;
+        width: 100%;
+       
     }
     a:link, a:visited{
         color: var(--champagne-pink-dark);
@@ -129,6 +131,15 @@ body{
         display: none;
     }
 }
+// .hide-for-md{
+//     display: block;
+//     @include md{
+//         display: none;
+//     }
+//     @include lg{
+//         display: block;
+//     }
+// }
 
 .show-menu{
     display: block !important;

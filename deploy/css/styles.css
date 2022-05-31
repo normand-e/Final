@@ -1001,20 +1001,7 @@ footer #newsletter-btn {
 @media (min-width: 1024px) {
   .service-grid .service-card {
     text-align: center;
-    padding-top: 16px;
-    display: grid;
-    grid-template-areas: "pic" "title" "copy";
-  }
-  .service-grid .service-card .bgi-services {
-    grid-area: pic;
-    margin: 0;
-  }
-  .service-grid .service-card h4 {
-    grid-area: title;
-    padding-top: 8px;
-  }
-  .service-grid .service-card p {
-    grid-area: copy;
+    padding-top: 10px;
   }
 }
 
@@ -1160,6 +1147,13 @@ footer #newsletter-btn {
     grid-template-areas: ". . posts . . . . . . . . ." ". . cat cat cat s-in s-in s-in s-in but . .";
   }
 }
+#posts #hero-post-img {
+  width: 100vw;
+  height: 40vw;
+  background-image: url(../img/blog/hero-post.png);
+  background-size: cover;
+  background-position: 10% 100%;
+}
 @media (min-width: 768px) {
   #posts #smaller-b-posts {
     display: grid;
@@ -1200,6 +1194,11 @@ footer #newsletter-btn {
 @media (min-width: 768px) {
   #posts .cards-ind {
     display: block;
+  }
+}
+@media (min-width: 1024px) {
+  #posts .cards-ind span {
+    display: inline;
   }
 }
 

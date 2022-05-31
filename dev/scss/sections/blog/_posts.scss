@@ -4,6 +4,7 @@
 
 
 #posts {
+
     #category-search {
         display: grid;
         gap: 16px;
@@ -44,6 +45,16 @@
                 ". . cat cat cat s-in s-in s-in s-in but . .";
         }
     }
+
+    #hero-post-img{
+        
+        width: 100vw;
+        height: 40vw;
+        background-image: url(../img/blog/hero-post.png);
+        background-size: cover;
+        background-position: 10% 100%;
+    }
+
 
     #smaller-b-posts {
         @include md{
@@ -96,6 +107,12 @@
         @include md{
             display: block;
         }
+        @include lg{
+            span{
+                display: inline;
+            }
+        }
+        
 
         
 

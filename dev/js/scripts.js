@@ -1,10 +1,13 @@
-let burgerBtn = document.querySelector("#burger-btn");
+var burgerBtn = document.querySelector("#burger-btn");
 let mainMenu = document.querySelector("#main-menu");
+
+
+
 
 let canSeeMenu = false;
 
 burgerBtn.addEventListener("click", () => {
-    // console.log(canSeeMenu);
+    console.log("pressed");
 
     if(!canSeeMenu){
         mainMenu.classList.add("show-menu");

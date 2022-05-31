@@ -120,26 +120,34 @@ body{
         display: inline-block;
     }
 }
-.hide-at-md{
-    display: inline-block;
-    @include lg{
-        display: none;
-    }
-}
+
 .hide-at-lg{
     @include lg{
         display: none;
     }
 }
-// .hide-for-md{
-//     display: block;
-//     @include md{
-//         display: none;
-//     }
-//     @include lg{
-//         display: block;
-//     }
-// }
+
+.hide-at-md{
+    display: block;
+    @include md{
+        display: none;
+    }
+    @include lg{
+        display: block;
+    }
+}
+
+
+
+.blog-md-show{
+    display: none;
+    @include md{
+        display: block;
+    }
+    @include lg{
+        display: none;
+    }
+}
 
 .show-menu{
     display: block !important;

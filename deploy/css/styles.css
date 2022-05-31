@@ -478,17 +478,36 @@ body ul {
   }
 }
 
-.hide-at-md {
-  display: inline-block;
-}
 @media (min-width: 1024px) {
-  .hide-at-md {
+  .hide-at-lg {
     display: none;
   }
 }
 
+.hide-at-md {
+  display: block;
+}
+@media (min-width: 768px) {
+  .hide-at-md {
+    display: none;
+  }
+}
 @media (min-width: 1024px) {
-  .hide-at-lg {
+  .hide-at-md {
+    display: block;
+  }
+}
+
+.blog-md-show {
+  display: none;
+}
+@media (min-width: 768px) {
+  .blog-md-show {
+    display: block;
+  }
+}
+@media (min-width: 1024px) {
+  .blog-md-show {
     display: none;
   }
 }
@@ -1116,6 +1135,20 @@ footer #newsletter-btn {
 /* =============
     Posts - Blog
 ============= */
+#posts h5 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: var(--champagne-pink-dark);
+  margin-top: 8px;
+  margin-bottom: 6px;
+}
+#posts h3 {
+  margin-top: 0;
+  margin-bottom: 6px;
+}
+#posts p {
+  margin-bottom: 6px;
+}
 #posts #category-search {
   display: grid;
   gap: 16px;
@@ -1148,11 +1181,43 @@ footer #newsletter-btn {
   }
 }
 #posts #hero-post-img {
-  width: 100vw;
-  height: 40vw;
+  width: 93vw;
+  height: 75vw;
   background-image: url(../img/blog/hero-post.png);
   background-size: cover;
   background-position: 10% 100%;
+}
+@media (min-width: 768px) {
+  #posts #hero-post-img {
+    width: 65vw;
+    height: 20vw;
+    background-position: 10% 60%;
+  }
+}
+@media (min-width: 1024px) {
+  #posts #hero-post-img {
+    width: 75vw;
+    height: 20vw;
+  }
+}
+@media (min-width: 1200px) {
+  #posts #hero-post-img {
+    width: 65vw;
+  }
+}
+#posts #repotting-img {
+  width: 30vw;
+  height: 25vw;
+  background-image: url(../img/blog/repotting-party.png);
+  background-size: cover;
+  background-position: 0% 0%;
+}
+#posts #sowing-img {
+  width: 30vw;
+  height: 25vw;
+  background-image: url(../img/blog/sowing-seeds.png);
+  background-size: cover;
+  background-position: 0% 0%;
 }
 @media (min-width: 768px) {
   #posts #smaller-b-posts {
@@ -1170,12 +1235,22 @@ footer #newsletter-btn {
   color: var(--tea-green-dark);
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+#posts #pagination aside {
+  margin-left: 10px;
+  margin-right: 10px;
 }
 #posts #pagination ul {
   display: flex;
-  align-items: center;
+  padding-top: 12px;
+}
+#posts #pagination ul li {
+  margin-left: 10px;
+  margin-right: 10px;
 }
 #posts #pagination ul li a {
+  font-size: 1.25rem;
   color: var(--tea-green-dark);
 }
 #posts .cards-ind {
@@ -1199,6 +1274,11 @@ footer #newsletter-btn {
 @media (min-width: 1024px) {
   #posts .cards-ind span {
     display: inline;
+  }
+}
+@media (min-width: 1200px) {
+  #posts #val-post {
+    display: none;
   }
 }
 

@@ -5,6 +5,21 @@
 
 #posts {
 
+    h5{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        color: var(--champagne-pink-dark);
+        margin-top: 8px;
+        margin-bottom: 6px;
+    }
+    h3{
+        margin-top: 0;
+        margin-bottom: 6px;
+    }
+    p{
+        margin-bottom: 6px;
+    }
+
     #category-search {
         display: grid;
         gap: 16px;
@@ -27,6 +42,7 @@
 
         #blog-search-btn {
             grid-area: but;
+            
         }
 
         @include md {
@@ -48,11 +64,42 @@
 
     #hero-post-img{
         
-        width: 100vw;
-        height: 40vw;
+        width: 93vw;
+        height: 75vw;
         background-image: url(../img/blog/hero-post.png);
         background-size: cover;
         background-position: 10% 100%;
+        @include md{
+            width: 65vw;
+            height: 20vw;
+            background-position: 10% 60%;
+        }
+        @include lg{
+            width: 75vw;
+            height: 20vw;
+        }
+        @include xl{
+            width: 65vw;
+        }
+    }
+    #repotting-img{
+        width: 30vw;
+        height: 25vw;
+        background-image: url(../img/blog/repotting-party.png);
+        background-size: cover;
+        background-position: 0% 0%;
+
+    }
+    #sowing-img{
+
+        width: 30vw;
+        height: 25vw;
+        background-image: url(../img/blog/sowing-seeds.png);
+        background-size: cover;
+        background-position: 0% 0%;
+
+
+
     }
 
 
@@ -73,14 +120,26 @@
         color: var(--tea-green-dark);
         display: flex;
         justify-content: center;
+        align-items: center;
+
+        aside{
+            margin-left: 10px;
+            margin-right: 10px;
+        }
 
         ul {
             display: flex;
-            align-items: center;
+            padding-top: 12px;
+        
 
             li {
+            margin-left: 10px;
+            margin-right: 10px;
+                
                 a {
+                    font-size: rem-calc(20);
                     color: var(--tea-green-dark);
+                    
 
                 }
 
@@ -117,5 +176,15 @@
         
 
     }
+
+    #val-post{
+        @include xl{
+            display: none;
+        }
+    }
+
+    
+
+    
 
 }

@@ -4,10 +4,40 @@
 
 #blog-hero{
     margin-top: 80px;
-    background-color: var(--champagne-pink-med);
-    padding: 16px 0;
+    #blog-welcome{
+        background-color: var(--champagne-pink-med);
+        padding: 16px 0; 
+    }
 
-    h1{
+
+    #blog-copy{
+        filter: drop-shadow( -10, -3, #421908);
+        position: absolute;
+        top: 150px;
+        width: 100vw;
+        text-align: center;
+        @include md{
+            top: 210px
+        }
+        @include lg{
+            top: 250px
+        }
+        @include xl{
+            top: 280px
+        }
+    }
+
+
+    #blog-hero-img{
+        width: 100vw;
+        height: 40vw;
+        background-image: url('../img/blog/blog-hero.png');
+        background-size: cover;
+        background-position: 10% 100%;
+        
+    }
+
+    #welcome{
         margin-bottom: 8px;
         @include md{
             margin-bottom: 16px;

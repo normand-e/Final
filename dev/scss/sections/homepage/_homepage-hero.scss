@@ -11,8 +11,7 @@
         height: 40vw;
         background-image: url('../img/homepage/homepage-hero.png');
         background-size: cover;
-        background-position: 10% 100%;
-        
+        background-position: 10% 100%;        
     }
 
     #hero-copy{
@@ -30,22 +29,7 @@
         }
         
         filter: drop-shadow( -10, -3, #421908);
-        h1{
-            font-family: 'BenchNine', sans-serif;
-            font-size: rem-calc(32);
-            color: var(--white);
-            letter-spacing: 1rem;
-            @include md{
-                font-size: rem-calc(63);
-            }
-            @include lg{
-                font-size: rem-calc(95);
-            }
-            @include xl{
-                font-size: rem-calc(107);
-            }
-            
-        }
+        
         h2{
             
             font-family: 'Playfair Display', serif;

@@ -5,19 +5,21 @@
 
 #posts {
 
-    h5{
+    h5 {
         font-family: 'Montserrat', sans-serif;
         font-weight: 400;
         color: var(--champagne-pink-dark);
         margin-top: 8px;
-        margin-bottom: 6px;
+        margin-bottom: 8px;
     }
-    h3{
+
+    h3 {
         margin-top: 0;
-        margin-bottom: 6px;
+        margin-bottom: 8px;
     }
-    p{
-        margin-bottom: 6px;
+
+    p {
+        margin-bottom: 8px;
     }
 
     #category-search {
@@ -30,6 +32,9 @@
         h2 {
             grid-area: posts;
             margin: 6px 0;
+            @include lg{
+                text-align: left;
+            }
         }
 
         #cat {
@@ -42,7 +47,7 @@
 
         #blog-search-btn {
             grid-area: but;
-            
+
         }
 
         @include md {
@@ -62,27 +67,31 @@
         }
     }
 
-    #hero-post-img{
-        
+    #hero-post-img {
+
         width: 93vw;
         height: 75vw;
         background-image: url(../img/blog/hero-post.png);
         background-size: cover;
         background-position: 10% 100%;
-        @include md{
+
+        @include md {
             width: 65vw;
             height: 20vw;
             background-position: 10% 60%;
         }
-        @include lg{
+
+        @include lg {
             width: 75vw;
             height: 20vw;
         }
-        @include xl{
+
+        @include xl {
             width: 65vw;
         }
     }
-    #repotting-img{
+
+    #repotting-img {
         width: 30vw;
         height: 25vw;
         background-image: url(../img/blog/repotting-party.png);
@@ -90,7 +99,8 @@
         background-position: 0% 0%;
 
     }
-    #sowing-img{
+
+    #sowing-img {
 
         width: 30vw;
         height: 25vw;
@@ -104,12 +114,13 @@
 
 
     #smaller-b-posts {
-        @include md{
+        @include md {
             display: grid;
             grid-template-columns: 50% auto;
             gap: 16px;
         }
-        @include xl{
+
+        @include xl {
             grid-template-columns: 33% 33% auto;
         }
     }
@@ -117,29 +128,37 @@
 
 
     #pagination {
-        color: var(--tea-green-dark);
         display: flex;
         justify-content: center;
         align-items: center;
 
-        aside{
+        aside {
             margin-left: 10px;
             margin-right: 10px;
+
+            a {
+                color: var(--tea-green-dark);
+
+            }
         }
 
         ul {
             display: flex;
             padding-top: 12px;
-        
+
 
             li {
-            margin-left: 10px;
-            margin-right: 10px;
-                
+                margin-left: 10px;
+                margin-right: 10px;
+
                 a {
                     font-size: rem-calc(20);
                     color: var(--tea-green-dark);
-                    
+
+                    @include lg {
+                        font-size: rem-calc(28);
+                    }
+
 
                 }
 
@@ -149,42 +168,49 @@
     }
 
     .cards-ind {
-        margin: 0;
-        display: grid;
-        grid-template-columns: 40px auto 40px;
-        grid-template-areas: ". content .";
 
-        >div {
-            grid-area: content;
 
-            >div {
-                display: flex;
-                justify-content: flex-end;
-            }
-        }
-
-        @include md{
+        @include md {
             display: block;
         }
-        @include lg{
-            span{
+
+        @include lg {
+            span {
                 display: inline;
             }
         }
-        
 
-        
+
+
 
     }
 
-    #val-post{
-        @include xl{
+    #val-post {
+        @include xl {
             display: none;
         }
     }
 
-    
 
-    
+    .flex-col {
+
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+
+
+
+        .button-flex {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: auto;
+
+
+
+
+        }
+    }
+
+
 
 }

@@ -34,6 +34,7 @@ nav{
     box-sizing: border-box;
     background-color: var(--tea-green);
 
+
     @include lg {
       display: block;
         height: 50%;
@@ -55,6 +56,7 @@ nav{
 
     #close-btn{
         padding: 16px 0;
+        color: var(--ruddy-bronze-light);
     }
     
 

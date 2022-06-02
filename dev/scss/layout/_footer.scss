@@ -42,7 +42,7 @@ footer{
        
     }
 
-    #copywrite{
+    .copywrite{
         text-align: center;
         margin-bottom: 25px;
         grid-template-areas: 
@@ -51,7 +51,7 @@ footer{
         #brand-icons{
             grid-area: icons;
         }
-        #copywrite{
+        #copywrite-text{
             grid-area: copywrite;
          
         }
